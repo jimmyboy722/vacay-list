@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.header {
+  color: #0b1da9;
+  background-color: aqua;
+  padding: 30px;
+  text-align: center;
+  font-size: 50px;
+}
