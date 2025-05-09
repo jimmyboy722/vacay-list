@@ -16,7 +16,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #020024;
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
@@ -27,7 +26,6 @@ body {
 
 .header {
   color: floralwhite;
-  /* background-color: aqua; */
   padding: 30px;
   text-align: center;
   font-size: 50px;
@@ -45,7 +43,7 @@ body {
 input[type="text"] {
   padding: 0.8rem;
   margin-right: 1rem;
-  width: calc(100% - 100px) %;
+  width: 80%;
   border-radius: 8px;
   border: none;
   outline: none;
@@ -63,10 +61,48 @@ button {
   font-size: 1.4rem;
   background: #0000cc;
   color: #fff;
-  width: 100%;
+  width: 210px;
+  transition: background 0.3s;
 }
 
 button:hover {
   cursor: pointer;
   background: #6666ff;
+}
+
+.todo {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background 0.3s;
+}
+.todo:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.3);
+}
+.task {
+  flex: 1;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.delete,
+.edit {
+  cursor: pointer;
+  transition: transform 0.2s, color 0.3s;
+}
+.delete:hover {
+  transform: scale(1.1);
+  color: #ff4757;
+}
+.edit:hover {
+  transform: scale(1.1);
+  color: #1e90ff;
+}
+svg {
+  fill: currentColor;
 }
